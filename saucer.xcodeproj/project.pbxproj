@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		610D54421BCA26A900DECC66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54411BCA26A900DECC66 /* AppDelegate.swift */; };
+		610D54441BCA26A900DECC66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54431BCA26A900DECC66 /* ViewController.swift */; };
+		610D54471BCA26A900DECC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610D54451BCA26A900DECC66 /* Main.storyboard */; };
+		610D544A1BCA26A900DECC66 /* saucer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 610D54481BCA26A900DECC66 /* saucer.xcdatamodeld */; };
+		610D544C1BCA26A900DECC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610D544B1BCA26A900DECC66 /* Assets.xcassets */; };
+		610D544F1BCA26A900DECC66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610D544D1BCA26A900DECC66 /* LaunchScreen.storyboard */; };
+		610D545A1BCA26A900DECC66 /* saucerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54591BCA26A900DECC66 /* saucerTests.swift */; };
+		610D54651BCA26A900DECC66 /* saucerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54641BCA26A900DECC66 /* saucerUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		610D54561BCA26A900DECC66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610D54361BCA26A900DECC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 610D543D1BCA26A900DECC66;
+			remoteInfo = saucer;
+		};
+		610D54611BCA26A900DECC66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 610D54361BCA26A900DECC66 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 610D543D1BCA26A900DECC66;
+			remoteInfo = saucer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		610D543E1BCA26A900DECC66 /* saucer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saucer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		610D54411BCA26A900DECC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		610D54431BCA26A900DECC66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		610D54461BCA26A900DECC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		610D54491BCA26A900DECC66 /* saucer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = saucer.xcdatamodel; sourceTree = "<group>"; };
+		610D544B1BCA26A900DECC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		610D544E1BCA26A900DECC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		610D54501BCA26A900DECC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610D54551BCA26A900DECC66 /* saucerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saucerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		610D54591BCA26A900DECC66 /* saucerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saucerTests.swift; sourceTree = "<group>"; };
+		610D545B1BCA26A900DECC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		610D54601BCA26A900DECC66 /* saucerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saucerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		610D54641BCA26A900DECC66 /* saucerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saucerUITests.swift; sourceTree = "<group>"; };
+		610D54661BCA26A900DECC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		610D543B1BCA26A900DECC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610D54521BCA26A900DECC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610D545D1BCA26A900DECC66 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		610D54351BCA26A900DECC66 = {
+			isa = PBXGroup;
+			children = (
+				610D54401BCA26A900DECC66 /* saucer */,
+				610D54581BCA26A900DECC66 /* saucerTests */,
+				610D54631BCA26A900DECC66 /* saucerUITests */,
+				610D543F1BCA26A900DECC66 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		610D543F1BCA26A900DECC66 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				610D543E1BCA26A900DECC66 /* saucer.app */,
+				610D54551BCA26A900DECC66 /* saucerTests.xctest */,
+				610D54601BCA26A900DECC66 /* saucerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		610D54401BCA26A900DECC66 /* saucer */ = {
+			isa = PBXGroup;
+			children = (
+				610D54411BCA26A900DECC66 /* AppDelegate.swift */,
+				610D54431BCA26A900DECC66 /* ViewController.swift */,
+				610D54451BCA26A900DECC66 /* Main.storyboard */,
+				610D544B1BCA26A900DECC66 /* Assets.xcassets */,
+				610D544D1BCA26A900DECC66 /* LaunchScreen.storyboard */,
+				610D54501BCA26A900DECC66 /* Info.plist */,
+				610D54481BCA26A900DECC66 /* saucer.xcdatamodeld */,
+			);
+			path = saucer;
+			sourceTree = "<group>";
+		};
+		610D54581BCA26A900DECC66 /* saucerTests */ = {
+			isa = PBXGroup;
+			children = (
+				610D54591BCA26A900DECC66 /* saucerTests.swift */,
+				610D545B1BCA26A900DECC66 /* Info.plist */,
+			);
+			path = saucerTests;
+			sourceTree = "<group>";
+		};
+		610D54631BCA26A900DECC66 /* saucerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				610D54641BCA26A900DECC66 /* saucerUITests.swift */,
+				610D54661BCA26A900DECC66 /* Info.plist */,
+			);
+			path = saucerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		610D543D1BCA26A900DECC66 /* saucer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610D54691BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucer" */;
+			buildPhases = (
+				610D543A1BCA26A900DECC66 /* Sources */,
+				610D543B1BCA26A900DECC66 /* Frameworks */,
+				610D543C1BCA26A900DECC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = saucer;
+			productName = saucer;
+			productReference = 610D543E1BCA26A900DECC66 /* saucer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		610D54541BCA26A900DECC66 /* saucerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610D546C1BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucerTests" */;
+			buildPhases = (
+				610D54511BCA26A900DECC66 /* Sources */,
+				610D54521BCA26A900DECC66 /* Frameworks */,
+				610D54531BCA26A900DECC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				610D54571BCA26A900DECC66 /* PBXTargetDependency */,
+			);
+			name = saucerTests;
+			productName = saucerTests;
+			productReference = 610D54551BCA26A900DECC66 /* saucerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		610D545F1BCA26A900DECC66 /* saucerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 610D546F1BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucerUITests" */;
+			buildPhases = (
+				610D545C1BCA26A900DECC66 /* Sources */,
+				610D545D1BCA26A900DECC66 /* Frameworks */,
+				610D545E1BCA26A900DECC66 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				610D54621BCA26A900DECC66 /* PBXTargetDependency */,
+			);
+			name = saucerUITests;
+			productName = saucerUITests;
+			productReference = 610D54601BCA26A900DECC66 /* saucerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		610D54361BCA26A900DECC66 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Sang Lee";
+				TargetAttributes = {
+					610D543D1BCA26A900DECC66 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					610D54541BCA26A900DECC66 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 610D543D1BCA26A900DECC66;
+					};
+					610D545F1BCA26A900DECC66 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 610D543D1BCA26A900DECC66;
+					};
+				};
+			};
+			buildConfigurationList = 610D54391BCA26A900DECC66 /* Build configuration list for PBXProject "saucer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 610D54351BCA26A900DECC66;
+			productRefGroup = 610D543F1BCA26A900DECC66 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				610D543D1BCA26A900DECC66 /* saucer */,
+				610D54541BCA26A900DECC66 /* saucerTests */,
+				610D545F1BCA26A900DECC66 /* saucerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		610D543C1BCA26A900DECC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610D544F1BCA26A900DECC66 /* LaunchScreen.storyboard in Resources */,
+				610D544C1BCA26A900DECC66 /* Assets.xcassets in Resources */,
+				610D54471BCA26A900DECC66 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610D54531BCA26A900DECC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610D545E1BCA26A900DECC66 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		610D543A1BCA26A900DECC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610D54441BCA26A900DECC66 /* ViewController.swift in Sources */,
+				610D54421BCA26A900DECC66 /* AppDelegate.swift in Sources */,
+				610D544A1BCA26A900DECC66 /* saucer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610D54511BCA26A900DECC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610D545A1BCA26A900DECC66 /* saucerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		610D545C1BCA26A900DECC66 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				610D54651BCA26A900DECC66 /* saucerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		610D54571BCA26A900DECC66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 610D543D1BCA26A900DECC66 /* saucer */;
+			targetProxy = 610D54561BCA26A900DECC66 /* PBXContainerItemProxy */;
+		};
+		610D54621BCA26A900DECC66 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 610D543D1BCA26A900DECC66 /* saucer */;
+			targetProxy = 610D54611BCA26A900DECC66 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		610D54451BCA26A900DECC66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				610D54461BCA26A900DECC66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		610D544D1BCA26A900DECC66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				610D544E1BCA26A900DECC66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		610D54671BCA26A900DECC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		610D54681BCA26A900DECC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		610D546A1BCA26A900DECC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = saucer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		610D546B1BCA26A900DECC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = saucer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		610D546D1BCA26A900DECC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = saucerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/saucer.app/saucer";
+			};
+			name = Debug;
+		};
+		610D546E1BCA26A900DECC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = saucerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/saucer.app/saucer";
+			};
+			name = Release;
+		};
+		610D54701BCA26A900DECC66 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = saucerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = saucer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		610D54711BCA26A900DECC66 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = saucerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = saucer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		610D54391BCA26A900DECC66 /* Build configuration list for PBXProject "saucer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610D54671BCA26A900DECC66 /* Debug */,
+				610D54681BCA26A900DECC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		610D54691BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610D546A1BCA26A900DECC66 /* Debug */,
+				610D546B1BCA26A900DECC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		610D546C1BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610D546D1BCA26A900DECC66 /* Debug */,
+				610D546E1BCA26A900DECC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		610D546F1BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				610D54701BCA26A900DECC66 /* Debug */,
+				610D54711BCA26A900DECC66 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		610D54481BCA26A900DECC66 /* saucer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				610D54491BCA26A900DECC66 /* saucer.xcdatamodel */,
+			);
+			currentVersion = 610D54491BCA26A900DECC66 /* saucer.xcdatamodel */;
+			path = saucer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 610D54361BCA26A900DECC66 /* Project object */;
+}
