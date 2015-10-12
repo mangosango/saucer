@@ -10,7 +10,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class DiscoverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class DiscoverViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, GfyTableViewCellDelegate {
 
     let networkInterface: GfyNetwork = GfyNetwork()
     
@@ -30,6 +30,11 @@ class DiscoverViewController: UIViewController, UITableViewDelegate, UITableView
         self.title = "Discover"
         let navbar = self.navigationController!.navigationBar
         navbar.tintColor = UIColor(red:0.32, green:0.28, blue:0.61, alpha:1.0)
+        let searchButton = UIButton(frame: CGRectMake(0, 0, 24, 24))
+        searchButton.setImage(UIImage(named: "searchIcon.png"), forState: UIControlState.Normal)
+        searchButton.addTarget(self, action: "searchButtonPressed:", forControlEvents: UIControlEvents.TouchUpInside)
+        let searchButtonInNavbar = UIBarButtonItem(customView: searchButton)
+        self.navigationItem.rightBarButtonItem = searchButtonInNavbar
         
         networkInterface.getTrendingGfys("", completionHandler: updateGfys)
         
@@ -127,6 +132,7 @@ class DiscoverViewController: UIViewController, UITableViewDelegate, UITableView
         }
         
         cell.setGfyPlayer(NSURL(string: cell.gfy.mp4Url)!)
+        cell.thisDelegate = self
         
         return cell
     }
@@ -146,7 +152,6 @@ class DiscoverViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     
-    
     func showVideoVC(url: NSURL) {
         let player = AVPlayer(URL: url)
         playerViewController = AVPlayerViewController()
@@ -156,10 +161,23 @@ class DiscoverViewController: UIViewController, UITableViewDelegate, UITableView
         }
     }
     
+    func searchButtonPressed(sender: AnyObject?) {
+        print("search tapped")
+    }
+    
     func getDataFromUrl(url:NSURL, completion: ((data: NSData?, response: NSURLResponse?, error: NSError? ) -> Void)) {
         NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) in
             completion(data: data, response: response, error: error)
             }.resume()
     }
-
+    
+    func shareGfy(gfyName: String) {
+        let gfyUrl: NSURL = NSURL(string: "http://gfycat.com/\(gfyName)")!
+        let shareString: String = " via @SaucerApp #gfycat"
+        
+        let activityViewController = UIActivityViewController(activityItems: [shareString, gfyUrl], applicationActivities: nil)
+        navigationController?.presentViewController(activityViewController, animated: true) {
+            
+        }
+    }
 }

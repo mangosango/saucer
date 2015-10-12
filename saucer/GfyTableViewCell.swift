@@ -10,7 +10,13 @@ import UIKit
 import AVKit
 import AVFoundation
 
+protocol GfyTableViewCellDelegate {
+    func shareGfy(gfyName: String)
+}
+
 class GfyTableViewCell: UITableViewCell {
+    
+    var thisDelegate: GfyTableViewCellDelegate?
     
     let padding: CGFloat = 8
     let screenBounds = UIScreen.mainScreen().bounds
@@ -25,6 +31,8 @@ class GfyTableViewCell: UITableViewCell {
     var videoPlayer: AVPlayer!
     var videoPlayerItem: AVPlayerItem!
     var videoPlayerLayer: AVPlayerLayer!
+    
+    var shareButton: UIButton!
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -66,7 +74,24 @@ class GfyTableViewCell: UITableViewCell {
         views.textColor = UIColor(red:0.62, green:0.62, blue:0.64, alpha:1.0)
         views.textAlignment = NSTextAlignment.Right
         
+        shareButton = UIButton(frame: CGRectMake(bgView.frame.maxX-40, 8, 25, 25))
+        shareButton.addTarget(self, action: "share", forControlEvents: UIControlEvents.TouchUpInside)
+        shareButton.layer.cornerRadius = 12
+        shareButton.clipsToBounds = true
+        
+        let visualEffectView = UIVisualEffectView(effect: UIBlurEffect(style: .Light)) as UIVisualEffectView
+        visualEffectView.frame = shareButton.bounds
+        visualEffectView.userInteractionEnabled = false
+        shareButton.addSubview(visualEffectView)
+        
+        let shareIcon = UIImageView(frame: shareButton.bounds)
+        shareIcon.image = UIImage(named: "share.png")!.imageWithRenderingMode(UIImageRenderingMode.AlwaysTemplate)
+        shareIcon.tintColor = UIColor.whiteColor()
+        shareIcon.userInteractionEnabled = false
+        shareButton.addSubview(shareIcon)
+        
         bgView.addSubview(imageURL)
+        bgView.addSubview(shareButton)
         
         bgView.addSubview(title)
         bgView.addSubview(views)
@@ -91,6 +116,10 @@ class GfyTableViewCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
+    }
+    
+    func share() {
+        thisDelegate?.shareGfy(self.gfy.g_name)
     }
     
     func setGfyPlayer(url: NSURL) {
