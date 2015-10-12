@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		610D54421BCA26A900DECC66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54411BCA26A900DECC66 /* AppDelegate.swift */; };
-		610D54441BCA26A900DECC66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54431BCA26A900DECC66 /* ViewController.swift */; };
+		610D54441BCA26A900DECC66 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54431BCA26A900DECC66 /* DiscoverViewController.swift */; };
 		610D54471BCA26A900DECC66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610D54451BCA26A900DECC66 /* Main.storyboard */; };
 		610D544A1BCA26A900DECC66 /* saucer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 610D54481BCA26A900DECC66 /* saucer.xcdatamodeld */; };
 		610D544C1BCA26A900DECC66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 610D544B1BCA26A900DECC66 /* Assets.xcassets */; };
 		610D544F1BCA26A900DECC66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 610D544D1BCA26A900DECC66 /* LaunchScreen.storyboard */; };
 		610D545A1BCA26A900DECC66 /* saucerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54591BCA26A900DECC66 /* saucerTests.swift */; };
 		610D54651BCA26A900DECC66 /* saucerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610D54641BCA26A900DECC66 /* saucerUITests.swift */; };
+		6116743D1BCA2C0C001D751B /* GfyNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6116743C1BCA2C0C001D751B /* GfyNetwork.swift */; settings = {ASSET_TAGS = (); }; };
+		6158F7A21BCA289200A1DF72 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6158F7A11BCA289200A1DF72 /* MainNavigationController.swift */; settings = {ASSET_TAGS = (); }; };
+		6195E3481BCAF5900084B897 /* Pods_saucer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE2164800F129CB6A7EBEF /* Pods_saucer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		61E78EF51BCA378800293644 /* GfyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E78EF41BCA378800293644 /* GfyModel.swift */; settings = {ASSET_TAGS = (); }; };
+		61E78EF71BCA44B700293644 /* GfyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E78EF61BCA44B700293644 /* GfyTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
+		93CD6095D58F6EAC1B9CD14F /* Pods_saucer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBEE2164800F129CB6A7EBEF /* Pods_saucer.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +40,25 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6195E3491BCAF5900084B897 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6195E3481BCAF5900084B897 /* Pods_saucer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		5A776292341553ADA97D00C1 /* Pods-saucer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saucer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-saucer/Pods-saucer.debug.xcconfig"; sourceTree = "<group>"; };
 		610D543E1BCA26A900DECC66 /* saucer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = saucer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		610D54411BCA26A900DECC66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		610D54431BCA26A900DECC66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		610D54431BCA26A900DECC66 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		610D54461BCA26A900DECC66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		610D54491BCA26A900DECC66 /* saucer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = saucer.xcdatamodel; sourceTree = "<group>"; };
 		610D544B1BCA26A900DECC66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +70,16 @@
 		610D54601BCA26A900DECC66 /* saucerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = saucerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		610D54641BCA26A900DECC66 /* saucerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = saucerUITests.swift; sourceTree = "<group>"; };
 		610D54661BCA26A900DECC66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6116743C1BCA2C0C001D751B /* GfyNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GfyNetwork.swift; sourceTree = "<group>"; };
+		6121706D1BCB712C00725A8A /* Saucer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Saucer-Bridging-Header.h"; sourceTree = "<group>"; };
+		6158F7A11BCA289200A1DF72 /* MainNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
+		61E78EEE1BCA306900293644 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods-saucer/Alamofire.framework"; sourceTree = "<group>"; };
+		61E78EEF1BCA306900293644 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/Pods-saucer/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		61E78EF01BCA306900293644 /* UIColor_Hex_Swift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIColor_Hex_Swift.framework; path = "Pods/../build/Debug-iphoneos/Pods-saucer/UIColor_Hex_Swift.framework"; sourceTree = "<group>"; };
+		61E78EF41BCA378800293644 /* GfyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GfyModel.swift; sourceTree = "<group>"; };
+		61E78EF61BCA44B700293644 /* GfyTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GfyTableViewCell.swift; sourceTree = "<group>"; };
+		CBEE2164800F129CB6A7EBEF /* Pods_saucer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_saucer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D89937572B4BBA37A25D80C9 /* Pods-saucer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-saucer.release.xcconfig"; path = "Pods/Target Support Files/Pods-saucer/Pods-saucer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93CD6095D58F6EAC1B9CD14F /* Pods_saucer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +115,8 @@
 				610D54581BCA26A900DECC66 /* saucerTests */,
 				610D54631BCA26A900DECC66 /* saucerUITests */,
 				610D543F1BCA26A900DECC66 /* Products */,
+				BFEB506B83EBE4D1C3DAE589 /* Pods */,
+				B6822F025AF8A48F66AC07F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,7 +134,12 @@
 			isa = PBXGroup;
 			children = (
 				610D54411BCA26A900DECC66 /* AppDelegate.swift */,
-				610D54431BCA26A900DECC66 /* ViewController.swift */,
+				6121706D1BCB712C00725A8A /* Saucer-Bridging-Header.h */,
+				6158F7A11BCA289200A1DF72 /* MainNavigationController.swift */,
+				610D54431BCA26A900DECC66 /* DiscoverViewController.swift */,
+				61E78EF61BCA44B700293644 /* GfyTableViewCell.swift */,
+				6116743C1BCA2C0C001D751B /* GfyNetwork.swift */,
+				61E78EF41BCA378800293644 /* GfyModel.swift */,
 				610D54451BCA26A900DECC66 /* Main.storyboard */,
 				610D544B1BCA26A900DECC66 /* Assets.xcassets */,
 				610D544D1BCA26A900DECC66 /* LaunchScreen.storyboard */,
@@ -128,6 +167,26 @@
 			path = saucerUITests;
 			sourceTree = "<group>";
 		};
+		B6822F025AF8A48F66AC07F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				61E78EEE1BCA306900293644 /* Alamofire.framework */,
+				61E78EEF1BCA306900293644 /* SwiftyJSON.framework */,
+				61E78EF01BCA306900293644 /* UIColor_Hex_Swift.framework */,
+				CBEE2164800F129CB6A7EBEF /* Pods_saucer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFEB506B83EBE4D1C3DAE589 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A776292341553ADA97D00C1 /* Pods-saucer.debug.xcconfig */,
+				D89937572B4BBA37A25D80C9 /* Pods-saucer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +194,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 610D54691BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucer" */;
 			buildPhases = (
+				03A93B0198B51954F058BEAF /* Check Pods Manifest.lock */,
 				610D543A1BCA26A900DECC66 /* Sources */,
 				610D543B1BCA26A900DECC66 /* Frameworks */,
 				610D543C1BCA26A900DECC66 /* Resources */,
+				E943AAE3AB2B3FBF602C7835 /* Embed Pods Frameworks */,
+				1B6C9BEBDA7413756134585A /* Copy Pods Resources */,
+				6195E3491BCAF5900084B897 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -190,6 +253,8 @@
 		610D54361BCA26A900DECC66 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftMigration = 0700;
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Sang Lee";
 				TargetAttributes = {
@@ -253,13 +318,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03A93B0198B51954F058BEAF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1B6C9BEBDA7413756134585A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-saucer/Pods-saucer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E943AAE3AB2B3FBF602C7835 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-saucer/Pods-saucer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		610D543A1BCA26A900DECC66 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				610D54441BCA26A900DECC66 /* ViewController.swift in Sources */,
+				610D54441BCA26A900DECC66 /* DiscoverViewController.swift in Sources */,
 				610D54421BCA26A900DECC66 /* AppDelegate.swift in Sources */,
+				61E78EF71BCA44B700293644 /* GfyTableViewCell.swift in Sources */,
+				61E78EF51BCA378800293644 /* GfyModel.swift in Sources */,
+				6158F7A21BCA289200A1DF72 /* MainNavigationController.swift in Sources */,
+				6116743D1BCA2C0C001D751B /* GfyNetwork.swift in Sources */,
 				610D544A1BCA26A900DECC66 /* saucer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,23 +515,37 @@
 		};
 		610D546A1BCA26A900DECC66 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A776292341553ADA97D00C1 /* Pods-saucer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-saucer",
+				);
 				INFOPLIST_FILE = saucer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "saucer/Saucer-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		610D546B1BCA26A900DECC66 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D89937572B4BBA37A25D80C9 /* Pods-saucer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Pods-saucer",
+				);
 				INFOPLIST_FILE = saucer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sanglee.saucer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "saucer/Saucer-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -485,6 +616,7 @@
 				610D546B1BCA26A900DECC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610D546C1BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucerTests" */ = {
 			isa = XCConfigurationList;
@@ -493,6 +625,7 @@
 				610D546E1BCA26A900DECC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		610D546F1BCA26A900DECC66 /* Build configuration list for PBXNativeTarget "saucerUITests" */ = {
 			isa = XCConfigurationList;
@@ -501,6 +634,7 @@
 				610D54711BCA26A900DECC66 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

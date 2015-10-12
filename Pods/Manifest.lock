@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (3.0.0)
+  - Reveal-iOS-SDK (1.5.1)
+  - SwiftyJSON (2.3.0)
+  - UIColor_Hex_Swift (1.2)
+  - UIScrollView-InfiniteScroll (0.7.3)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.0)
+  - Reveal-iOS-SDK
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON.git`)
+  - UIColor_Hex_Swift (~> 1.2)
+  - UIScrollView-InfiniteScroll
+
+EXTERNAL SOURCES:
+  SwiftyJSON:
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+CHECKOUT OPTIONS:
+  SwiftyJSON:
+    :commit: 3b5d0d4e0c19173b1bf0dc823bde25ad870f70c0
+    :git: https://github.com/SwiftyJSON/SwiftyJSON.git
+
+SPEC CHECKSUMS:
+  Alamofire: b61782387f81bcc538a0284cf2bb5d7995cd0a80
+  Reveal-iOS-SDK: c9c55cad2729c85f6ced415f1b21857c9a2d8ef9
+  SwiftyJSON: 8d6b61a70277ef2a5d710d372e06e7e2d87fb9e4
+  UIColor_Hex_Swift: a1eff7380ffffed64b1540268e958ecdaa5fbd72
+  UIScrollView-InfiniteScroll: b6c7d6d155dca7f9c5dd43813ecffeb301b3d50c
+
+COCOAPODS: 0.37.2
